@@ -227,7 +227,7 @@ def create_transaction(data,acct_num):
         print(choice)
         if choice == "1" or choice =="2":
             try:
-                tranAmt = int(input(f"Enter a Amount to {"Withdraw" if choice=="1" else "Deposit"}:- "))
+                tranAmt = int(input(f'Enter a Amount to {"Withdraw" if choice=="1" else "Deposit"}:- '))
                 remarks = input("Enter Transaction Remarks:- ")
             except ValueError:
                 print("Incorrect Amount Format.Couldnt Create Transaction")
